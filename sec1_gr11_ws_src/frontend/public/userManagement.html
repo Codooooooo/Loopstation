@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/Homepage.css">
+    <link rel="stylesheet" href="css/pro.css">
+</head>
+
+<body>
+<header>
+    <img class="logo_homepage" src="image\logo.png">
+</header>
+<nav>
+    <a href="homePage"><i class="Homepage"></i> Homepage</a>
+    <a href="login"><i class="LoginPage"></i>Login</a>
+    <a href="search"><i class="SearchPage"></i> Search</a>
+    <a href="productManage"><i class="ManagementPage"></i> Product/Service Management</a>
+
+
+</nav>
+    <!--edit the user information-->
+    <div class="title">
+        <h2>-User Management-</h2>
+    </div>
+    <div class="form">
+        <form class="type">
+            <div>
+                <h3>User information</h3>
+            </div>
+            <div class="item">
+                <div class="column-lab">
+                    <label for="username">User ID</label>
+                    <input type="text" id="userID" placeholder="UserID">
+                </div>
+                <div class="column-lab">
+                    <label for="userfname">First name</label>
+                    <input type="text" id="userFname" placeholder="UserFName">
+                </div>
+                <div class="column-lab">
+                    <label for="userlname">Last name</label>
+                    <input type="text" id="userLname" placeholder="UserLName">
+                </div>
+                <div class="column-lab">
+                    <label for="usermale">User's gender</label>
+                </div>
+                    <div class="column-lab">
+                        <select id="Gender" type="text" required>
+                            <option value="M">M</option>
+                            <option value="F">F</option>
+                        </select>
+                </div>
+                <div class="column-lab">
+                    <label for="userage">Age</label>
+                    <input type="text" id="Age" placeholder="Age">
+                </div>
+                <div class="column-lab">
+                    <label for="userPhone">Phone</label>
+                    <input type="text" id="Phone" placeholder="phonenum">
+                </div>
+                <div class="column-lab">
+                    <label for="useremail">Email</label>
+                    <input type="text" id="Email" placeholder="Emialaddress">
+                </div>
+                <div class="column-lab">
+                    <label for="loginId">Login ID</label>
+                    <input type="text" id="loginId" placeholder="Login ID">
+                </div>
+                <div class="column-lab">
+                    <label for="password">Password</label>
+                    <input type="text" id="password" placeholder="Password">
+                </div>
+                <div class="column-lab">
+                    <label for="loginRole">Login Role</label>
+                    <input type="text" id="loginRole" placeholder="Login Role">
+                </div>
+                <div class="bottem">
+                    <input type="button" id="edit_u" value="Edit">
+                    <input type="button" id="deleteItem_u" value="Delete">
+                    <input type="button" id="add_u" value="Add">
+                </div>
+            </div>
+        </form>
+        <!--Search Admi infor-->
+        <form id="Search admi">
+            <div class="item">
+                <div>
+                    <h3>Search Administratior</h3>
+                </div>
+                <div class="col-lab">
+                    <label for="searchID">User ID</label>
+                    <input type="text" id="searchid" placeholder="put admi id" required>
+                </div>
+                <div class="col-lab">
+                    <label for="searchName">User FName</label>
+                    <input type="text" id="search_fname" placeholder="Fname" required>
+                </div>
+                <div class="col-lab">
+                    <label for="searchName">User LName</label>
+                    <input type="text" id="search_lname" placeholder="Lname" required>
+                </div>
+                <div class="col-lab">
+                    <label for="searchEmail">User Email</label>
+                    <input type="text" id="search_email" placeholder="Email" required>
+                </div>
+                <div class="col-lab">
+                    <label for="searchGender">User's gender</label>
+                    <input type="text" id="searchgender" placeholder="User gender" required>
+                </div>
+            </div>
+        </form>
+        <div class="bottem">
+            <input type="submit" id="searchUsers" value="search">
+            <input type="button" id="viewall_u" value="View all">
+        </div>
+        <br>
+        <!-- Search result table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>User ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="admi-list">
+                <!-- Search result will be added here using JavaScript -->
+            </tbody>
+        </table>
+        </table>
+    </div>
+
+
+
+    <footer>
+        <div class="column">
+            <h1>Loopstation</h1>
+            <a href="Aboutus"><i class="AboutUsPage"></i>
+                <h4>About us</h4>
+            </a>
+            <h4>Our Services</h4>
+            <h4>History</h4>
+        </div>
+    
+        <div class="column">
+            <h1>Policy</h1>
+            <h4>Privacy</h4>
+            <h4>Payment</h4>
+            <h4>Return</h4>
+        </div>
+        <div class="column">
+            <h1>Help</h1>
+            <h4>FAQ</h3>
+                <h4>Customer Service</h4>
+                <h4>Order</h4>
+        </div>
+    </footer>
+    <script src="/javascript/AdmiFun.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/Products.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo_homepage" src="image\logo.png">
+    </header>
+    <nav>
+        <a href="homePage"><i class="Homepage"></i> Homepage</a>
+        <a href="login"><i class="LoginPage"></i>Login</a>
+        <a href="Aboutus"><i class="AboutUsPage"></i> About Us</a>
+
+    </nav>
+    <div class="Products_title">
+        Loopstation Pad
+    </div>
+    <div class="Products_introduction">
+        <span id="pd_rating"><br></span>
+    </div>
+
+    <div class="image-container">
+        <div class="left">
+            <img id="left-image" src="image\iPad_1.jpg">
+            <p>
+                <h3>
+                    <span id="pd_name"></span><br>
+                    <span id="pd_inches"></span><br>
+                    <span id="pd_memory"></span><br>
+                    <span id="pd_color"></span><br>
+                    <span id="pd_internet"></span><br>
+                </h3>
+                <h1 id="pd_price"></h1>
+                <div id="currency-selection">
+                    <select id="currency-dropdown">
+                      <option value="THB">THB</option>
+                      <option value="JPY">JPY</option>
+                      <option value="USD">USD</option>
+                      <option value="EUR">EUR</option>
+                      <option value="CNY">CNY</option>
+                    </select>
+                </div>
+            <button onclick="href='#'">BUY</button>
+            </p>
+        </div>
+
+        <div class="right">
+            <img id="right-image" src="image\90New_pad.jpg">
+        </div>
+    </div>
+
+    <footer>
+        <div class="column">
+            <h1>Loopstation</h1>
+            <a href="Aboutus"><i class="AboutUsPage"></i>
+                <h4>About us</h4>
+            </a>
+            <h4>Our Services</h4>
+            <h4>History</h4>
+        </div>
+
+        <div class="column">
+            <h1>Policy</h1>
+            <h4>Privacy</h4>
+            <h4>Payment</h4>
+            <h4>Return</h4>
+        </div>
+        <div class="column">
+            <h1>Help</h1>
+            <h4>FAQ</h3>
+                <h4>Customer Service</h4>
+                <h4>Order</h4>
+        </div>
+    </footer>
+    <script src="javascript/productDetail.js"></script>
+    <script src="javascript/APIuse.js"></script>
+</body>
+
+</html>

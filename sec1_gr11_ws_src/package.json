@@ -1,0 +1,16 @@
+{
+  "name": "sec1_gr11_src",
+  "version": "1.0.0",
+  "description": "ITCS212 - Web Programming",
+  "main": "index.js",
+  "scripts": {
+    "start-frontend": "npm --prefix frontend run start",
+    "start-backend": "npm --prefix backend run start",
+    "start": "concurrently \"npm run start-frontend\" \"npm run start-backend\""
+  },
+  "author": "Chusong Xu, Yunduo Luo, Lingrui Dong",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
