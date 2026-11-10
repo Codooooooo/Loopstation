@@ -1,7 +1,7 @@
 {
-  "name": "sec1_gr11_src",
+  "name": "loopstation",
   "version": "1.0.0",
-  "description": "ITCS212 - Web Programming",
+  "description": "Loopstation - second-hand trading platform for phones, tablets and wearables",
   "main": "index.js",
   "scripts": {
     "start-frontend": "npm --prefix frontend run start",
